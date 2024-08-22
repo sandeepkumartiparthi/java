@@ -1,19 +1,15 @@
 import java.util.Scanner;
-
-public class CheckEvenOrOdd {
-    public static void main(String[] args) {
+import java.io.*;
+class Evenodd
+{
+    public static void main(String[] args)
+    {
         Scanner sc = new Scanner(System.in);
-        int n;
-        System.out.println("Enter the number :");
-        n = sc.nextInt();
-        if (isEven(n) == 0)
-            System.out.print("The given number is Even\n");
+        System.out.println("Enter the number");
+        int a = sc.nextInt();
+        if ((a & 1) == 0)
+        System.out.println(a + " is even");
         else
-            System.out.print("The given number is Odd\n");
+        System.out.println(a + " is odd");
     }
-
-    private static int isEven(int n) {
-        return n & 1;
-    }
-
 }

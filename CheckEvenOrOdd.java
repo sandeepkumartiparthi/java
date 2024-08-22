@@ -7,7 +7,7 @@ class Evenodd
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number");
         int a = sc.nextInt();
-        if ((a & 1) == 0)
+        if ((a & 1) == 0)     or  if((a/2)*a==0)
         System.out.println(a + " is even");
         else
         System.out.println(a + " is odd");
